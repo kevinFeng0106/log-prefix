@@ -1,0 +1,70 @@
+# Created by @moonlord/gitig
+# 前端项目通用 .gitignore 模板
+
+# 依赖文件 (Dependencies)
+node_modules/
+.pnp
+.pnp.js
+
+# 生产构建输出 (Production builds)
+/dist
+/build
+/.next
+/.nuxt
+/out
+
+# 开发服务器 (Development)
+.vite
+.cache
+.temp
+
+# 环境变量文件 (Environment variables)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 日志文件 (Logs)
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 编辑器和IDE (Editors & IDEs)
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 操作系统文件 (OS generated files)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# TypeScript
+*.tsbuildinfo
+
+# 测试覆盖率 (Coverage)
+lib-cov
+*.lcov
+.nyc_output
+.coverage
+coverage/
+
+# 缓存文件（Cache）
+.eslintcache
+.prettierignore
+.stylelintcache
