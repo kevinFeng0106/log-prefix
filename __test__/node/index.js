@@ -1,7 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var log_prefix_1 = require("@moonlord/log-prefix");
-var prefixConsole = new log_prefix_1.default("[PrefixConsole]");
+var fs = require("fs");
+var fsWriteStream = fs.createWriteStream("./logs/test.log");
+var prefixConsole = new log_prefix_1.default("[PrefixConsole]", fsWriteStream);
 prefixConsole.log("[log] Hello %s", "World!");
 prefixConsole.warn("[warn] Hello %s", "World!");
 prefixConsole.error("[error] Hello %s", "World!");

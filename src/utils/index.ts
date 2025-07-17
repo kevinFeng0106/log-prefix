@@ -7,3 +7,7 @@ export const getRuntimeConsole = () => {
   if (typeof global !== "undefined") return global.console;
   return globalThis.console;
 };
+
+export const getDefinedStdOut = (stdout?: NodeJS.WritableStream) => {
+  return stdout || process.stdout;
+};
