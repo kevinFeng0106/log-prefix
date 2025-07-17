@@ -2,7 +2,7 @@ import { getDefinedStdOut, getRuntimeConsole } from "./utils";
 
 const originConsole = getRuntimeConsole();
 
-export default class PrefixConsole {
+export default class PrefixConsole implements Omit<Console, "Console"> {
   private prefix: string;
   private console: typeof originConsole;
 
