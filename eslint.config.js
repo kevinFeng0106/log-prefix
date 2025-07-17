@@ -14,4 +14,9 @@ export default tseslint.config(
     semi: true,
     quotes: "double",
   }),
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+    },
+  },
 );
